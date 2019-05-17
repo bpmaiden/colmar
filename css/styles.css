@@ -1,3 +1,5 @@
+/*** Colmar Academy - Landing Page ***/
+
 /* Global Settings */
 
 * {
@@ -5,20 +7,105 @@
 }
 
 html {
+  font-family: Helvetica;
   font-size: 16px;
+}
+
+body {
+  background-color: #dddddd;
+}
+
+#content-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #aaaaaa;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 /* Header */
 
-/* Hero Section */
+header .desktop {
+  width: 100%;
+  height: 4rem;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.desktop img {
+  width: auto;
+  height: 2.5rem;
+}
+
+.org-id {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.desktop nav {
+  display: flex;
+  align-items: center;
+}
+
+.desktop nav a {
+  margin-left: 1rem;
+}
+
+/* Intro Section */
+
+.intro {
+  padding: 2rem 1.5rem;
+  background-color: #cccccc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.intro img {
+  width: 60%;
+  height: auto;
+  margin-right: 1.5rem;
+  display: block;
+}
+
+#call-to-action h3 {
+  margin: 2rem 0;
+}
+
+#call-to-action a {
+  width: 100%;
+  padding: 1rem;
+  display: block;
+  background-color: #666666;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
 
 /* Campus Life Section */
 
 /* Curriculum Section */
 
-/* Thesis Section */
+/* Achievements Section */
 
 /* Footer */
+
+footer {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
 
 /* Media Queries */
 
