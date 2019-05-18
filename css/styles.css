@@ -92,8 +92,10 @@ section h2 {
 
 header .desktop, header .mobile {
   width: 100%;
+  max-width: 1280px;
   height: 4rem;
   padding: 0 1.5rem;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,6 +127,11 @@ header .mobile {
 }
 
 /* Intro Section */
+
+#intro {
+  padding-top: 4rem;
+  /* To position the Intro section below the fixed header */
+}
 
 /* Campus Life Section */
 
