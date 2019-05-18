@@ -11,7 +11,7 @@ div, h1, h2, h3, h4, h5, h6,
 p, span, em, strong, a, blockquote,
 ul, li, header, footer, nav, article,
 section, aside, img, audio, video {
-	border: 1px solid red;
+	border: 1px solid darkolivegreen;
 }
 
 html {
@@ -63,19 +63,16 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid darkred;
 }
 
 .feature-wrap {
   margin-left: 1.5rem;
-  border: 1px solid green;
   display: flex;
 }
 
 .media {
   width: 60%;
   padding-right: 1.5rem;
-  border: 1px solid yellow;
 }
 
 .media > video, .media > img, #curriculum img {
@@ -85,7 +82,6 @@ section {
 
 .supporting-info {
   width: 40%;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
@@ -95,7 +91,6 @@ section {
   padding: 1rem 0.5rem 1rem 1rem;
   display: flex;
   align-items: center;
-  border: 1px solid skyblue;
 }
 
 .article-card img {
@@ -114,7 +109,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid magenta;
 }
 
 .description-wrap p {
@@ -225,7 +219,6 @@ header .mobile {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px solid red;
 }
 
 .course-card {
@@ -235,7 +228,6 @@ header .mobile {
   display: flex;
   flex-direction: column;
   background-color: white;
-  border: 1px solid blue;
 }
 
 .course-text {
@@ -302,7 +294,6 @@ footer nav a {
   .article-card img {
     width: 100%;
     height: auto;
-    border: 1px solid red;
   }
   
   .article-card .mobile-image {
@@ -316,7 +307,6 @@ footer nav a {
   .description-wrap {
     width: 100%;
     padding: 1rem 0 2rem 0;
-    border: 1px solid magenta;
   }  
 }
 
