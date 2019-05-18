@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+/* Add temporary borders to elements during layout */
+div, h1, h2, h3, h4, h5, h6,
+p, span, em, strong, a, blockquote,
+ul, li, header, footer, nav, article,
+section, aside, img, audio, video {
+	border: 1px solid red;
+}
+
 html {
   font-family: Helvetica;
   font-size: 16px;
@@ -13,6 +21,35 @@ html {
 
 body {
   background-color: #dddddd;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
 }
 
 #content-wrap {
@@ -27,10 +64,6 @@ section {
   flex-direction: column;
   align-items: center;
   border: 1px solid darkred;
-}
-
-section h2 {
-  margin-bottom: 2rem;
 }
 
 .feature-wrap {
@@ -102,6 +135,18 @@ header .desktop, header .mobile {
   background-color: white;
 }
 
+header .desktop #name-part-1 {
+  font-weight: 500;
+  color: black;
+  letter-spacing: 0.05em;
+}
+
+header .desktop #name-part-2 {
+  font-weight: 300;
+  color: #999999;
+  letter-spacing: 0.07em;
+}
+
 header .mobile {
   display: none;
 }
@@ -129,11 +174,42 @@ header .mobile {
 /* Intro Section */
 
 #intro {
-  padding-top: 4rem;
-  /* To position the Intro section below the fixed header */
+  padding-top: 6rem;
+  /* This pads the top of the Intro section in the usual way,
+     and keeps it fully visible under the fixed header. */
+}
+
+#intro .supporting-info {
+  justify-content: center;
+  padding-right: 12rem;
+}
+
+#intro h3 {
+  margin: 1.5rem 0;
+  font-weight: 400;
+}
+
+#intro a {
+  padding: 0.5rem;
+  background-color: #666666;
+  color: white;
+  text-align: center;
 }
 
 /* Campus Life Section */
+
+#campus-life .media h2 {
+  margin: 2rem 0 1.5rem 0;;
+}
+
+#campus-life .media p {
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+#campus-life .article-card a {
+  margin-top: 0.5rem;
+}
 
 /* Curriculum Section */
 
@@ -172,6 +248,23 @@ header .mobile {
 
 /* Achievement Section */
 
+#achievement h2 {
+  margin-bottom: 2rem;
+}
+
+#achievement .media h3 {
+  margin-top: 1.5rem;
+}
+
+#achievement .media p {
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+}
+
+.description-wrap p {
+  margin-bottom: 0;
+}
+
 /* Footer */
 
 footer {
@@ -179,6 +272,10 @@ footer {
   display: flex;
   justify-content: space-between;
   font-size: 0.75rem;
+}
+
+footer nav a {
+  margin-left: 0.75rem;
 }
 
 /* Media Queries */
