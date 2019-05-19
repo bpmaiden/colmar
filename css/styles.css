@@ -7,41 +7,43 @@
 }
 
 /* Add temporary borders to elements during layout */
-div, h1, h2, h3, h4, h5, h6,
-p, span, em, strong, a, blockquote,
-ul, li, header, footer, nav, article,
-section, aside, img, audio, video {
-	border: 1px solid darkolivegreen;
+div, ul, li, header, footer, nav, section {
+	border: 1px solid darkgreen;
 }
 
 html {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
   font-size: 16px;
 }
 
 body {
-  background-color: #dddddd;
+  /* background-color: #dddddd; */
 }
 
 h1 {
+  font-family: "Roboto Slab", "Lucida Bright", serif;
   font-size: 2.25rem;
   font-weight: 700;
 }
 
 h2 {
+  font-family: "Roboto Slab", "Lucida Bright", serif;
   font-size: 1.75rem;
   font-weight: 700;
 }
 
 h3 {
+  font-family: "Roboto Slab", "Lucida Bright", serif;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h4 {
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  text-transform: uppercase;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 p {
@@ -49,13 +51,14 @@ p {
 }
 
 a {
+  font-weight: 500;
   text-decoration: none;
 }
 
 #content-wrap {
   max-width: 1280px;
   margin: 0 auto;
-  background-color: #aaaaaa;
+  /* background-color: #aaaaaa; */
 }
 
 section {
@@ -129,16 +132,22 @@ header .desktop, header .mobile {
   background-color: white;
 }
 
-header .desktop #name-part-1 {
-  font-weight: 500;
-  color: black;
-  letter-spacing: 0.05em;
+.org-id {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Lucida Bright", Arial;
+  letter-spacing: 0.06em;
 }
 
-header .desktop #name-part-2 {
+header .desktop #name-1 {
+  font-weight: 700;
+  color: black;
+}
+
+header .desktop #name-2 {
   font-weight: 300;
   color: #999999;
-  letter-spacing: 0.07em;
 }
 
 header .mobile {
@@ -148,12 +157,6 @@ header .mobile {
 .desktop img {
   width: auto;
   height: 2.5rem;
-}
-
-.org-id {
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
 }
 
 .desktop nav {
@@ -169,13 +172,17 @@ header .mobile {
 
 #intro {
   padding-top: 6rem;
-  /* This pads the top of the Intro section in the usual way,
-     and keeps it fully visible under the fixed header. */
+  /* This lowers the Intro section, allowing
+     room for the fixed header at top of page. */
 }
 
 #intro .supporting-info {
   justify-content: center;
   padding-right: 12rem;
+}
+
+#intro h2 {
+  font-weight: 400; 
 }
 
 #intro h3 {
@@ -187,7 +194,9 @@ header .mobile {
   padding: 0.5rem;
   background-color: #666666;
   color: white;
+  font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* Campus Life Section */
