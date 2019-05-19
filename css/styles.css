@@ -23,36 +23,52 @@ body {
 
 h1 {
   font-family: "Roboto Slab", "Lucida Bright", serif;
-  font-size: 2.25rem;
+  font-size: 2.6rem;
   font-weight: 700;
+  line-height: 0.966;
 }
 
 h2 {
   font-family: "Roboto Slab", "Lucida Bright", serif;
-  font-size: 1.75rem;
+  font-size: 2.1rem;
   font-weight: 700;
 }
 
 h3 {
   font-family: "Roboto Slab", "Lucida Bright", serif;
-  font-size: 1.25rem;
+  font-size: 1.175rem;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.044em;
+  word-spacing: 0.06em;
+  line-height: 1.21;
 }
 
 h4 {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.91rem;
   font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 0.0308em;
 }
 
 p {
-  line-height: 1.25;
+  line-height: 1.313;
 }
 
 a {
   font-weight: 500;
   text-decoration: none;
+}
+
+nav a {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.0308em;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 #content-wrap {
@@ -116,6 +132,7 @@ section {
 
 .description-wrap p {
   margin: 0.5rem 0;
+  font-style: italic;
 }
 
 /* Header */
@@ -137,10 +154,11 @@ header .desktop, header .mobile {
   align-items: center;
   text-transform: uppercase;
   font-family: "Lucida Bright", Arial;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.066em;
 }
 
 header .desktop #name-1 {
+  padding-right: 0.066em;
   font-weight: 700;
   color: black;
 }
@@ -162,6 +180,7 @@ header .mobile {
 .desktop nav {
   display: flex;
   align-items: center;
+  font-size: 0.9rem;
 }
 
 .desktop nav a {
@@ -178,7 +197,7 @@ header .mobile {
 
 #intro .supporting-info {
   justify-content: center;
-  padding-right: 12rem;
+  padding-right: 10rem;
 }
 
 #intro h2 {
@@ -186,8 +205,9 @@ header .mobile {
 }
 
 #intro h3 {
-  margin: 1.5rem 0;
+  margin: 0.85rem 0 1.25rem 0;
   font-weight: 400;
+  text-transform: lowercase;
 }
 
 #intro a {
@@ -241,10 +261,15 @@ header .mobile {
 
 .course-text {
   padding: 1rem 1rem 1.5rem 1rem;
+  text-align: center;
 }
 
 .course-card h4 {
   margin: 0.5rem 0;
+}
+
+.course-card p {
+  font-style: italic;
 }
 
 /* Achievement Section */
