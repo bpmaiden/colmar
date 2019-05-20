@@ -12,8 +12,8 @@ div, ul, li, header, footer, nav, section {
 }
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-family: "Merriweather Sans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -22,34 +22,35 @@ body {
 }
 
 h1 {
-  font-family: "Roboto Slab", "Lucida Bright", serif;
-  font-size: 2.6rem;
+  font-family: Merriweather, "Lucida Bright", serif;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 0.966;
+  text-transform: capitalize;
 }
 
 h2 {
-  font-family: "Roboto Slab", "Lucida Bright", serif;
-  font-size: 2.1rem;
+  font-family: Merriweather, "Lucida Bright", serif;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 h3 {
-  font-family: "Roboto Slab", "Lucida Bright", serif;
+  font-family: "Merriweather Sans", Arial, sans-serif;
   font-size: 1.175rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.044em;
+  letter-spacing: 0.02em;
   word-spacing: 0.06em;
   line-height: 1.21;
+  text-transform: uppercase;
 }
 
 h4 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 0.91rem;
-  font-weight: 400;
+  font-family: "Merriweather Sans", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  letter-spacing: 0.0308em;
 }
 
 p {
@@ -124,11 +125,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.description-wrap p {
-  margin: 0.5rem 0;
-  font-style: italic;
 }
 
 /* Header */
@@ -218,7 +214,8 @@ header .mobile {
 /* Campus Life Section */
 
 #campus-life .media h2 {
-  margin: 2rem 0 1.5rem 0;;
+  margin: 2rem 0 1.5rem 0;
+  font-family: "Merriweather Sans", Arial, sans-serif;
 }
 
 #campus-life .media p {
@@ -262,10 +259,6 @@ header .mobile {
 
 .course-card h4 {
   margin: 0.5rem 0;
-}
-
-.course-card p {
-  font-style: italic;
 }
 
 /* Achievement Section */
