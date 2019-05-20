@@ -23,38 +23,37 @@ body {
 
 h1 {
   font-family: Merriweather, "Lucida Bright", serif;
-  font-size: 2.5rem;
+  font-size: 2.35rem;
   font-weight: 700;
-  line-height: 0.966;
   text-transform: capitalize;
+  line-height: 1.122;
 }
 
 h2 {
   font-family: Merriweather, "Lucida Bright", serif;
-  font-size: 2rem;
+  font-size: 2.04rem;
   font-weight: 700;
-}
+  }
 
 h3 {
   font-family: "Merriweather Sans", Arial, sans-serif;
-  font-size: 1.175rem;
+  font-size: 1.31rem;
   font-weight: 700;
   letter-spacing: 0.02em;
-  word-spacing: 0.06em;
-  line-height: 1.21;
+  line-height: 1.245;
   text-transform: uppercase;
 }
 
 h4 {
   font-family: "Merriweather Sans", Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 1.065rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
 p {
-  line-height: 1.313;
+  line-height: 1.25;
 }
 
 a {
@@ -127,6 +126,10 @@ section {
   justify-content: center;
 }
 
+.description-wrap p {
+  margin-top: 0.25rem;
+}
+
 /* Header */
 
 header .desktop, header .mobile {
@@ -145,18 +148,16 @@ header .desktop, header .mobile {
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  font-family: "Lucida Bright", Arial;
-  letter-spacing: 0.066em;
+  font-family: Merriweather, "Lucida Bright", sans-serif;
+  letter-spacing: 0.064em;
 }
 
 header .desktop #name-1 {
-  padding-right: 0.066em;
-  font-weight: 700;
+  padding-right: 0.064em;
   color: black;
 }
 
 header .desktop #name-2 {
-  font-weight: 300;
   color: #999999;
 }
 
@@ -215,7 +216,6 @@ header .mobile {
 
 #campus-life .media h2 {
   margin: 2rem 0 1.5rem 0;
-  font-family: "Merriweather Sans", Arial, sans-serif;
 }
 
 #campus-life .media p {
@@ -224,7 +224,10 @@ header .mobile {
 }
 
 #campus-life .article-card a {
-  margin-top: 0.5rem;
+  margin-top: 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* Curriculum Section */
