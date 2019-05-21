@@ -188,7 +188,7 @@ header .mobile {
      room for the fixed header at top of page. */
 }
 
-#intro .supporting-info {
+.supporting-info {
   justify-content: center;
   padding-right: 10rem;
 }
@@ -305,7 +305,7 @@ footer nav a {
 
   section h2 {
     margin-bottom: 1.5rem;
-  }  
+  }
 
   .feature-wrap {
     margin: 0;
@@ -333,13 +333,26 @@ footer nav a {
   .description-wrap {
     width: 100%;
     padding: 1rem 0 2rem 0;
-  }  
+  }
+
+  .description-wrap p {
+    margin-top: 0.75rem;
+  }
+
+  #campus-life .article-card a {
+    margin-top: 1rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   header .mobile {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  #intro {
+    padding-top: 4rem;
+    /* This adjusts for the fixed header at top of page. */
   }  
 
   header .desktop {
@@ -366,10 +379,31 @@ footer nav a {
 
   .media {
     width: 100%;
-    padding: 0 0 2rem 0;
+    padding: 0;
+  }
+
+  #campus-life .media {
+    display: none;
   }
 
   .supporting-info {
     width: 100%;
+    padding: 2rem 1rem;
   }
+
+  #intro h3 {
+    margin: 2rem 0 1.5rem 0;
+  }
+
+  #campus-life .supporting-info {
+    padding-top: 1rem;
+  }
+
+  .description-wrap {
+    padding: 1rem 1rem 4rem 1rem;
+  }
+
+  #campus-life .article-card a {
+    font-size: 0.85rem;
+  }  
 }  
