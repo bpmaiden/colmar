@@ -138,6 +138,7 @@ header .desktop, header .mobile {
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  border-bottom: 1px solid #cccccc;
 }
 
 .org-id {
@@ -248,14 +249,14 @@ header .mobile {
   margin: 1rem;
 }
 
-.course-card img, .course-content-wrap {
-  border: 2px solid darkolivegreen;
+.media img, video, .supporting-info img, .course-card img, .course-content-wrap {
+  border: 2px solid rgba(0,80,29,.81);
   border-radius: 6px;
 }
 
 .course-content-wrap {
   height: 214px;
-  margin-top: 0.53rem;
+  margin-top: 0.5rem;
   padding: 0.8rem;
   display: flex;
   flex-direction: column;
@@ -274,7 +275,7 @@ header .mobile {
 
 i {
   margin-bottom: 0.125rem;
-  color: #d3d3d3;
+  color: rgba(5,80,25,0.18);
 }
 
 /* Achievement Section */
@@ -310,9 +311,9 @@ footer nav a {
   margin-left: 0.75rem;
 }
 
-/* Media Queries */
+/*** Media Queries ***/
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 880px) {
   section {
     padding: 1rem;
   }
@@ -356,9 +357,21 @@ footer nav a {
   #campus-life .article-card a {
     margin-top: 1rem;
   }
+
+  #curriculum {
+    padding: 1rem 0;
+  }
+
+  .course-card {
+    width: 45%;
+  }
+
+  .course-card p {
+    margin: 0;
+  }  
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
   header .mobile {
     display: flex;
     justify-content: space-between;
@@ -373,6 +386,10 @@ footer nav a {
     display: none;
   }
 
+  p {
+    font-size: 0.85rem;
+  }
+
   #achievement .media {
     width: 100%;
     padding: 0;
@@ -381,9 +398,13 @@ footer nav a {
   #achievement .supporting-info {
     display: none;
   }
+
+  .course-card {
+    margin: 1rem 0.75rem;
+  }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   section {
     padding: 0;
   }
@@ -420,5 +441,23 @@ footer nav a {
 
   #campus-life .article-card a {
     font-size: 0.85rem;
-  }  
+  }
+
+  .course-card {
+    width: 100%;
+    margin: 0.25rem 0.5rem;
+  }
+  
+  .course-card img, .course-card i, .course-card h4, .course-card p {
+    display: none;
+  }
+
+  .course-card h3 {
+    margin: 0;
+  }
+
+  .course-content-wrap {
+    height: auto;
+    margin: 0;
+  }
 }  
