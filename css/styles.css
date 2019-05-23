@@ -123,7 +123,7 @@ section {
 }
 
 .description-wrap p {
-  margin-top: 0.25rem;
+  margin: 0.25rem 0 0 0;
 }
 
 /* Header */
@@ -293,10 +293,6 @@ i {
   font-style: italic;
 }
 
-.description-wrap p {
-  margin-bottom: 0;
-}
-
 /* Footer */
 
 footer {
@@ -352,7 +348,7 @@ footer {
   
   .description-wrap {
     width: 100%;
-    padding: 1rem 0 2rem 0;
+    padding: 1rem 0 0 0;
   }
 
   .description-wrap p {
@@ -429,13 +425,17 @@ footer {
     margin: 0 auto;
     padding: 1rem;
   }
-  
+    
+  .course-card {
+    margin: 1rem 0.75rem;
+  }
+
   #campus-life .supporting-info {
     padding: 0;
   }
   
   #campus-life .description-wrap {
-    padding-left: 1rem;
+    padding: 1rem 0 2rem 0;
   }
 
   #campus-life .media, #achievement .supporting-info {
@@ -446,9 +446,13 @@ footer {
     width: 100%;
     padding: 0;
   }
-  
-  .course-card {
-    margin: 1rem 0.75rem;
+
+  #achievement .media h3 {
+    margin: 1.5rem 1.5rem 0.575rem 1.5rem;
+  }
+
+  #achievement .media p {
+    margin: 0 1.5rem 2rem 1.5rem;
   }
 }
 
