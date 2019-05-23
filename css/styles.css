@@ -7,9 +7,9 @@
 }
 
 /* Add temporary borders to elements during layout */
-/* div, ul, li, header, footer, nav, section {
+div, ul, li, header, footer, nav, section {
 	border: 1px solid lightblue;
-} */
+}
 
 html {
   font-family: "Merriweather Sans", Arial, sans-serif;
@@ -29,6 +29,7 @@ h2 {
   font-family: Merriweather, "Lucida Bright", serif;
   font-size: 2.04rem;
   font-weight: 700;
+  line-height: 1.124;
   }
 
 h3 {
@@ -70,14 +71,13 @@ nav a {
 }
 
 section {
-  padding: 2rem 0;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .feature-wrap {
-  margin-left: 1.5rem;
   display: flex;
 }
 
@@ -185,9 +185,9 @@ header .mobile {
      room for the fixed header at top of page. */
 }
 
-.supporting-info {
+#intro .supporting-info {
+  max-width: 340px;
   justify-content: center;
-  padding-right: 10rem;
 }
 
 #intro h2 {
@@ -222,7 +222,7 @@ header .mobile {
 
 #campus-life .article-card a {
   margin-top: 0.55rem;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -245,12 +245,11 @@ header .mobile {
 }
 
 .course-card {
-  width: 342px;
+  width: 354px;
   margin: 1rem;
 }
 
-.media img, video, .supporting-info img, .course-card img, .course-content-wrap {
-  border: 2px solid rgba(0,80,29,.81);
+#intro a, .course-card img, .course-content-wrap {
   border-radius: 6px;
 }
 
@@ -304,18 +303,18 @@ footer {
   padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 0.75rem;
-}
-
-footer nav a {
-  margin-left: 0.75rem;
 }
 
 /*** Media Queries ***/
 
-@media only screen and (max-width: 880px) {
-  section {
-    padding: 1rem;
+/* 910 Pixel Width (Tablet - Landscape) */
+
+@media only screen and (max-width: 910px) {
+  h1 {
+    font-size: 2.04rem;
+    line-height: 1.124;
   }
 
   section h2 {
@@ -325,9 +324,15 @@ footer nav a {
   .feature-wrap {
     margin: 0;
   }
+
+  #intro h3 {
+    margin: 2rem 0 1.5rem 0;
+    font-size: 1.14rem;
+    line-height: 1.264;
+  }
   
   .article-card {
-    padding: 0;
+    padding-right: 1rem;
     display: block;
     border: 1px solid skyblue;
   }
@@ -354,6 +359,10 @@ footer nav a {
     margin-top: 0.575rem;
   }
 
+  #campus-life .media h2 {
+    margin: 1rem 0 0.25rem 0;
+  }
+  
   #campus-life .article-card a {
     margin-top: 1rem;
   }
@@ -371,6 +380,8 @@ footer nav a {
   }  
 }
 
+/* 680 Pixel Width (Tablet - Portrait) */
+
 @media only screen and (max-width: 680px) {
   header .mobile {
     display: flex;
@@ -380,46 +391,14 @@ footer nav a {
   #intro {
     padding-top: 4rem;
     /* This adjusts for the fixed header at top of page. */
-  }  
+  }
 
   header .desktop {
     display: none;
   }
 
-  p {
-    font-size: 0.85rem;
-  }
-
-  #achievement .media {
-    width: 100%;
-    padding: 0;
-  }
-  
-  #achievement .supporting-info {
-    display: none;
-  }
-
-  .course-card {
-    margin: 1rem 0.75rem;
-  }
-}
-
-@media only screen and (max-width: 500px) {
   section {
     padding: 0;
-  }
-
-  .feature-wrap {
-    flex-direction: column;
-  }
-
-  .media {
-    width: 100%;
-    padding: 0;
-  }
-
-  #campus-life .media {
-    display: none;
   }
 
   .supporting-info {
@@ -427,20 +406,65 @@ footer nav a {
     padding: 2rem 1rem;
   }
 
+  .feature-wrap {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  #intro .media {
+    width: 100%;
+    padding: 0;
+  }
+
+  #intro .supporting-info {
+    max-width: none;
+  }
+
+  #intro a {
+    width: 240px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  #campus-life .supporting-info {
+    padding: 0;
+  }
+  
+  #campus-life .description-wrap {
+    padding-left: 1rem;
+  }
+
+  #campus-life .media, #achievement .supporting-info {
+    display: none;
+  }
+  
+  #achievement .media {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .course-card {
+    margin: 1rem 0.75rem;
+  }
+}
+
+/* 500 Pixel Width (Mobile - Portrait) */
+
+@media only screen and (max-width: 500px) {
+  .feature-wrap {
+    flex-direction: column;
+  }
+
   #intro h3 {
     margin: 2rem 0 1.5rem 0;
   }
 
-  #campus-life .supporting-info {
-    padding-top: 1rem;
-  }
-
   .description-wrap {
-    padding: 1rem 1rem 4rem 1rem;
-  }
-
-  #campus-life .article-card a {
-    font-size: 0.85rem;
+    padding: 1rem 1rem 2rem 1rem;
   }
 
   .course-card {
@@ -448,7 +472,7 @@ footer nav a {
     margin: 0.25rem 0.5rem;
   }
   
-  .course-card img, .course-card i, .course-card h4, .course-card p {
+  #campus-life .media, .course-card img, .course-card i, .course-card h4, .course-card p {
     display: none;
   }
 
@@ -459,5 +483,21 @@ footer nav a {
   .course-content-wrap {
     height: auto;
     margin: 0;
+  }
+
+  .catalog-wrap {
+    padding-bottom: 1rem;
+  }
+
+  #achievement h2 {
+    margin: 2rem 0 1rem 0;
+  }
+
+  #achievement .media {
+    padding-bottom: 1.5rem;
+  }
+  
+  #achievement h3, #achievement p, footer nav {
+    display: none;
   }
 }  
