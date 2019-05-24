@@ -7,14 +7,15 @@
 }
 
 /* Add temporary borders to elements during layout */
-div, ul, li, header, footer, nav, section {
+/* div, ul, li, header, footer, nav, section {
 	border: 1px solid lightblue;
-}
+} */
 
 html {
   font-family: "Merriweather Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
+  color: hsla(203, 66%, 35%, 1);
 }
 
 h1 {
@@ -39,6 +40,7 @@ h3 {
   letter-spacing: 0.02em;
   line-height: 1.245;
   text-transform: uppercase;
+  color: hsla(22, 54%, 32%, 1);
 }
 
 h4 {
@@ -51,6 +53,7 @@ h4 {
 
 p {
   line-height: 1.35;
+  color: #424242;
 }
 
 a {
@@ -67,7 +70,7 @@ nav a {
 #content-wrap {
   max-width: 1280px;
   margin: 0 auto;
-  /* background-color: #aaaaaa; */
+  background-color: hsla(68, 57%, 94%, 1);
 }
 
 section {
@@ -99,9 +102,11 @@ section {
 
 .article-card {
   width: 100%;
+  margin-bottom: 1rem;
   padding: 1rem 0.5rem 1rem 1rem;
   display: flex;
   align-items: center;
+  background-color: white;
 }
 
 .article-card img {
@@ -137,8 +142,8 @@ header .desktop, header .mobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  border-bottom: 1px solid #cccccc;
+  background-color: hsla(209, 61%, 59%, 0.93);
+  border-bottom: 1px solid #dfdfd6;
 }
 
 .org-id {
@@ -149,13 +154,20 @@ header .desktop, header .mobile {
   letter-spacing: 0.064em;
 }
 
+#logo {
+  width: auto;
+  height: 2rem;
+  margin-right: 0.25rem;
+  border: none;
+}
+
 header .desktop #name-1 {
   padding-right: 0.064em;
-  color: black;
+  color: white;
 }
 
 header .desktop #name-2 {
-  color: #999999;
+  color: hsla(209, 76%, 90%, 1);
 }
 
 header .mobile {
@@ -175,14 +187,16 @@ header .mobile {
 
 .desktop nav a {
   margin-left: 1rem;
+  font-weight: 400;
+  color: white;
 }
 
 /* Intro Section */
 
 #intro {
   padding-top: 6rem;
-  /* This lowers the Intro section, allowing
-     room for the fixed header at top of page. */
+  /* This lowers the Intro section to allow room
+     for the fixed header at top of page. */
 }
 
 #intro .supporting-info {
@@ -198,15 +212,17 @@ header .mobile {
   margin: 0.85rem 0 1.25rem 0;
   font-weight: 400;
   text-transform: lowercase;
+  color: hsla(203, 66%, 35%, 1);
 }
 
 #intro a {
   padding: 0.5rem;
-  background-color: #666666;
+  background-color: darkred;
   color: white;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  border-radius: 6px;
 }
 
 /* Campus Life Section */
@@ -249,19 +265,28 @@ header .mobile {
   margin: 1rem;
 }
 
-#intro a, .course-card img, .course-content-wrap {
+.media img, video, .article-card {
+  border: 2px solid hsla(209, 63%, 60%, 1);
   border-radius: 6px;
+}
+
+.course-card img {
+  border: 2px solid hsla(209, 63%, 60%, 1);
+  border-bottom: 0;
+  border-radius: 6px 6px 0 0;
 }
 
 .course-content-wrap {
   height: 214px;
-  margin-top: 0.5rem;
   padding: 0.8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: #ffffff;
   text-align: center;
+  border: 2px solid hsla(209, 63%, 60%, 1);
+  border-top: 0;
+  border-radius: 0 0 6px 6px;
 }
 
 .course-card h4 {
@@ -274,7 +299,7 @@ header .mobile {
 
 i {
   margin-bottom: 0.125rem;
-  color: rgba(5,80,25,0.18);
+  color: hsla(209, 58%, 83%, 1);
 }
 
 /* Achievement Section */
@@ -330,7 +355,6 @@ footer {
   .article-card {
     padding-right: 1rem;
     display: block;
-    border: 1px solid skyblue;
   }
   
   .article-card img {
@@ -448,7 +472,7 @@ footer {
   }
 
   #achievement .media h3 {
-    margin: 1.5rem 1.5rem 0.575rem 1.5rem;
+    margin: 1rem 1.5rem 0.575rem 1.5rem;
   }
 
   #achievement .media p {
