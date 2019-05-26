@@ -15,7 +15,7 @@ html {
   font-family: "Merriweather Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: hsla(203, 66%, 35%, 1);
+  color: hsla(218, 82%, 23%, 1);
 }
 
 h1 {
@@ -33,32 +33,32 @@ h2 {
   line-height: 1.124;
   }
 
-h3 {
+h3, h4, #achievement h3 a {
   font-family: "Merriweather Sans", Arial, sans-serif;
   font-size: 1.31rem;
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.245;
   text-transform: uppercase;
-  color: hsla(22, 54%, 32%, 1);
+  color: hsla(13,93%,19%,1);
 }
 
 h4 {
-  font-family: "Merriweather Sans", Arial, sans-serif;
   font-size: 1.065rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
 }
 
 p {
   line-height: 1.35;
-  color: #424242;
 }
 
 a {
   font-weight: 500;
   text-decoration: none;
+  color: hsla(218, 87%, 66%, 1);
+}
+
+a:hover, a:active {
+  color: hsla(14,100%,56%,1);
 }
 
 nav a {
@@ -70,7 +70,7 @@ nav a {
 #content-wrap {
   max-width: 1280px;
   margin: 0 auto;
-  background-color: hsla(68, 57%, 94%, 1);
+  background-color: hsla(56, 59%, 94%, 1);
 }
 
 section {
@@ -98,6 +98,12 @@ section {
   width: 40%;
   display: flex;
   flex-direction: column;
+}
+
+hr {
+  margin: 0 1.5rem;
+  border-style: none;
+  border: 1px solid hsla(218, 45%, 75%, 1);
 }
 
 .article-card {
@@ -142,7 +148,7 @@ header .desktop, header .mobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: hsla(209, 61%, 59%, 0.93);
+  background-color: hsla(218, 64%, 51%, 0.92);
   border-bottom: 1px solid #dfdfd6;
 }
 
@@ -167,7 +173,7 @@ header .desktop #name-1 {
 }
 
 header .desktop #name-2 {
-  color: hsla(209, 76%, 90%, 1);
+  color: hsla(218, 80%, 85%, 1);
 }
 
 header .mobile {
@@ -212,17 +218,26 @@ header .mobile {
   margin: 0.85rem 0 1.25rem 0;
   font-weight: 400;
   text-transform: lowercase;
-  color: hsla(203, 66%, 35%, 1);
+  color: hsla(218, 82%, 23%, 1);
 }
 
 #intro a {
+  width: 170px;
   padding: 0.5rem;
-  background-color: darkred;
+  background-color: hsla(14,100%,56%,1);
   color: white;
   font-weight: 700;
+  letter-spacing: 0.01em;
   text-align: center;
   text-transform: uppercase;
+  box-shadow: 0 0 2px hsla(0,0%,0%,0.38) inset,
+  -1px 1px 3px hsla(0,0%,0%,0.65);
   border-radius: 6px;
+}
+
+#intro a:hover, #intro a:active {
+  box-shadow: 0 0 2px hsla(0,0%,0%,0.38) inset,
+  -2px 2px 3px hsla(0,0%,0%,0.7);
 }
 
 /* Campus Life Section */
@@ -238,7 +253,7 @@ header .mobile {
 
 #campus-life .article-card a {
   margin-top: 0.55rem;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -266,7 +281,7 @@ header .mobile {
 }
 
 .media img, video, .article-card {
-  border: 2px solid hsla(209, 63%, 60%, 1);
+  border: 2px solid hsla(218, 66%, 50%, 1);
   border-radius: 6px;
 }
 
@@ -284,7 +299,7 @@ header .mobile {
   justify-content: space-between;
   background-color: #ffffff;
   text-align: center;
-  border: 2px solid hsla(209, 63%, 60%, 1);
+  border: 2px solid hsla(218, 66%, 50%, 1);
   border-top: 0;
   border-radius: 0 0 6px 6px;
 }
@@ -295,11 +310,17 @@ header .mobile {
 
 .course-card p {
   margin: 0 2rem;
+  color:hsla(218, 82%, 23%, 1);
+}
+
+.course-card p:hover {
+  margin: 0 2rem;
+  color: hsla(14,100%,56%,1);
 }
 
 i {
   margin-bottom: 0.125rem;
-  color: hsla(209, 58%, 83%, 1);
+  color: hsla(220, 60%, 82%, 1);
 }
 
 /* Achievement Section */
@@ -318,6 +339,12 @@ i {
   font-style: italic;
 }
 
+#achievement p a {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 /* Footer */
 
 footer {
@@ -325,7 +352,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 /*** Media Queries ***/
@@ -500,7 +527,11 @@ footer {
     margin: 0.25rem 0.5rem;
   }
   
-  #campus-life .media, .course-card img, .course-card i, .course-card h4, .course-card p {
+  #campus-life .media,
+  .course-card img,
+  .course-card i,
+  .course-card h4,
+  .course-card p {
     display: none;
   }
 
