@@ -6,11 +6,6 @@
   box-sizing: border-box;
 }
 
-/* Add temporary borders to elements during layout */
-/* div, ul, li, header, footer, nav, section {
-	border: 1px solid lightblue;
-} */
-
 body {
   background-color: hsla(23, 30%, 27%, 1);
 }
@@ -243,8 +238,6 @@ header .mobile {
 
 #intro a:hover, #intro a:active {
   background-color: hsla(13,78%,31%,1);
-  /* box-shadow: 0 0 2px hsla(0,0%,0%,0.38) inset,
-  -2px 3px 2px hsla(14,6%,15%,0.64); */
 }
 
 /* Campus Life Section */
@@ -335,13 +328,16 @@ header .mobile {
 }
 
 .course-card p:hover {
-  margin: 0 2rem;
   color: hsla(14,100%,56%,1);
 }
 
 i {
   margin-bottom: 0.125rem;
   color: hsla(220, 60%, 82%, 1);
+}
+
+i:hover {
+  color: hsla(220, 80%, 72%, 1);
 }
 
 /* Achievement Section */
@@ -454,6 +450,13 @@ footer {
   header .mobile {
     display: flex;
     justify-content: space-between;
+    background-color: hsla(218, 64%, 51%, 1);
+  }
+  
+  header .mobile img {
+    height: 2rem;
+    width: auto;
+    margin-top: 0.3rem;
   }
 
   #intro {
@@ -482,6 +485,15 @@ footer {
   p {
     font-size: 0.9rem;
   }
+
+  hr {
+    display: none;
+  }
+
+  .media img, video, .article-card {
+    border: none;
+    border-radius: 0;
+  }  
 
   #intro .media {
     width: 100%;
