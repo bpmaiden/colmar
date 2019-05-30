@@ -38,7 +38,7 @@ h3, h4 {
   letter-spacing: 0.02em;
   line-height: 1.245;
   text-transform: uppercase;
-  color: hsla(13,93%,19%,1);
+  color: hsla(15,100%,26%,1);
 }
 
 h4 {
@@ -589,18 +589,18 @@ footer {
   .course-content-wrap {
     height: auto;
     margin: 0;
-    background-image: linear-gradient(hsla(14,100%,56%,0.5), 12%,
-    hsla(14,100%,80%,0.5), 88%,
-    hsla(14,100%,56%,0.5)),
-    linear-gradient(90deg, hsla(14,100%,56%,1), 2%,
-    hsla(14,100%,80%,0.5), 98%,
-    hsla(14,100%,56%,1));
+    background-image: linear-gradient(hsla(14,100%,56%,0.38), 12%,
+    hsla(17,100%,90%,0.57), 88%,
+    hsla(14,100%,56%,0.38)),
+    linear-gradient(90deg, hsla(14,100%,56%,0.7), 2%,
+    hsla(17,100%,80%,0.5), 98%,
+    hsla(14,100%,56%,0.7));
     border: none;
     border-radius: 6px;
   }
 
   #curriculum h3:hover {
-    color: hsla(0,100%,49%,1);
+    color: hsla(5,100%,55%,1);
   }
 
   #achievement h2 {
