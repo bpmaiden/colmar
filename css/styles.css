@@ -196,7 +196,7 @@ header .mobile {
 }
 
 .desktop nav a:hover {
-  color: hsla(14,100%,78%,1);
+  text-shadow: 0 0 4px hsla(0,0%,100%,1);
 }
 
 /* Intro Section */
