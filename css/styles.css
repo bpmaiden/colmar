@@ -38,7 +38,7 @@ h3, h4 {
   letter-spacing: 0.02em;
   line-height: 1.245;
   text-transform: uppercase;
-  color: hsla(15,100%,26%,1);
+  color: hsla(221, 64%, 42%, 1);
 }
 
 h4 {
@@ -231,13 +231,13 @@ header .mobile {
   letter-spacing: 0.01em;
   text-align: center;
   text-transform: uppercase;
-  color: hsla(222, 47%, 44%, 1);
+  color: hsla(221, 64%, 42%, 1);
   background-image: linear-gradient(hsla(14,100%,56%,0.6),
   20%,
   hsla(17,100%,90%,0.4),
   80%,
   hsla(14,100%,56%,0.6)),
-  linear-gradient(90deg,
+  linear-gradient(-90deg,
   hsla(14,100%,56%,1), 7%,
   hsla(17,100%,80%,0.5), 93%,
   hsla(14,100%,56%,1));
@@ -245,8 +245,9 @@ header .mobile {
 }
 
 #intro a:hover {
-  color: hsla(222, 57%, 57%, 1);
-  text-shadow: 0 0 7px hsla(0,0%,100%,0.96);
+  color: white;
+  text-shadow: 0 0 9px hsla(14,100%,60%,1),
+  0 0 9px hsla(14,100%,60%,1);
 }
 
 /* Campus Life Section */
@@ -594,8 +595,8 @@ footer {
     height: auto;
     padding-top: 1rem;
     background-image: linear-gradient(hsla(14,100%,56%,0.5), 12%,
-    hsla(17,100%,90%,0.57)),
-    linear-gradient(90deg,
+    hsla(17,100%,89%,0.57)),
+    linear-gradient(-90deg,
     hsla(14,100%,56%,0.7), 5%,
     hsla(17,100%,80%,0.5), 95%,
     hsla(14,100%,56%,0.7));
@@ -604,11 +605,13 @@ footer {
   }
 
   #curriculum h3 {
-    color: hsla(217, 56%, 40%, 1);
+    color: hsla(221, 39%, 42%, 1);
   }
 
   #curriculum h3:hover {
-    color: hsla(5,100%,55%,1);
+    color: white;
+  text-shadow: 0 0 10px hsla(14,100%,60%,1),
+  0 0 10px hsla(14,100%,60%,0.62);
   }
 
   #achievement h2 {
