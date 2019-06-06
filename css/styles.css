@@ -355,6 +355,10 @@ i {
   color: hsla(28, 54%, 69%, 0.86);
 }
 
+.course-card .prepend-icon {
+  display: none;
+}
+
 /* Achievement Section */
 
 #achievement h2 {
