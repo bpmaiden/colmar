@@ -587,9 +587,9 @@ footer {
   
   #campus-life .media,
   .course-card img,
-  .course-card i,
   .course-card h4,
-  .course-card p {
+  .course-card p,
+  .course-content-wrap > i {
     display: none;
   }
 
@@ -606,18 +606,27 @@ footer {
     hsla(14,100%,56%,0.7), 5%,
     hsla(17,100%,80%,0.5), 95%,
     hsla(14,100%,56%,0.7));
-    border: none;
     border-radius: 5px;
+    text-align: left;
   }
 
+  .course-card .prepend-icon {
+    display: inline;
+    vertical-align: text-top;
+    text-align: left;
+    color: hsla(221, 39%, 42%, 1);
+  }
+  
   #curriculum h3 {
+    display: inline;
+    font-size: 1.25rem;
     color: hsla(221, 39%, 42%, 1);
   }
 
   #curriculum h3:hover {
     color: white;
-  text-shadow: 0 0 10px hsla(14,100%,60%,1),
-  0 0 10px hsla(14,100%,60%,0.62);
+    text-shadow: 0 0 10px hsla(14,100%,60%,1),
+    0 0 10px hsla(14,100%,60%,0.62);
   }
 
   #achievement h2 {
